@@ -3,7 +3,7 @@ import {useParallax} from '../hooks/useReveal';
 
 type GiantTypeProps = {
   lines: readonly string[];
-  tone?: 'wine' | 'ink' | 'parchment';
+  tone?: 'blue' | 'ink' | 'white';
   /** Fraction of viewport height the block is offset by on entry / exit. */
   from?: number;
   to?: number;
@@ -18,14 +18,14 @@ type GiantTypeProps = {
 };
 
 const TONE = {
-  wine: 'text-wine',
+  blue: 'text-blue',
   ink: 'text-ink',
-  parchment: 'text-parchment',
+  white: 'text-white',
 } as const;
 
 /**
- * The scroll ruler. Enormous letterpressed words that travel faster than the
- * page and pass behind the bottle — the thing that makes the product read as
+ * The scroll ruler. Enormous bold words that travel faster than the
+ * page and pass behind the sticker — the thing that makes the product read as
  * fixed while everything else moves.
  *
  * Every line is measured and scaled to span the container exactly, the way the
@@ -34,7 +34,7 @@ const TONE = {
  */
 export function GiantType({
   lines,
-  tone = 'wine',
+  tone = 'blue',
   from = 0.17,
   to = -0.26,
   className = '',
@@ -94,7 +94,7 @@ export function GiantType({
     const ro = new ResizeObserver(() => run());
     ro.observe(container);
 
-    // Bodoni will not have arrived on the first pass; refit when it does.
+    // Anton will not have arrived on the first pass; refit when it does.
     document.fonts?.ready.then(() => run(true)).catch(() => {});
 
     return () => ro.disconnect();

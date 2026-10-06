@@ -6,7 +6,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 /**
  * One smoothed scroll position and one set of viewport dimensions, read every
- * frame by the 3D stage. Kept as plain mutable objects on purpose: the product
+ * frame by the product stage. Kept as plain mutable objects on purpose: the product
  * choreography must never cause a React render.
  */
 export const view = {w: 0, h: 0};
@@ -14,7 +14,7 @@ export const scroll = {y: 0};
 
 /**
  * Sections register themselves by name so the choreography can talk about
- * "the middle of the tasting section" instead of a magic pixel offset.
+ * "the middle of the benefits section" instead of a magic pixel offset.
  */
 const anchors = new Map<string, HTMLElement>();
 const metrics = new Map<string, {top: number; height: number}>();
