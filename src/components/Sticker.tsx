@@ -7,9 +7,9 @@ export function Sticker({ className = "" }: { className?: string }) {
     <span className={`sticker-crop ${className}`}>
       <img
         src={STICKER_URL}
-        alt="Create Design Code Build for everyone sticker"
-        width="468"
-        height="190"
+        alt="FreshCheck concept container with a smart lid and green indicator"
+        width="600"
+        height="600"
       />
     </span>
   );

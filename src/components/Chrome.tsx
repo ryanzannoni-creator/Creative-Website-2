@@ -99,11 +99,11 @@ export function Chrome({ reduced }: { reduced: boolean }) {
         <div className="rail-track">
           <div ref={progress} />
         </div>
-        <span className="rail-caption">MAKE YOUR MARK</span>
+        <span className="rail-caption">KEEP TRACK OF FRESH</span>
       </div>
       <header className={open ? "menu-open" : ""}>
         <a className="wordmark" href="#hero" onClick={() => setOpen(false)}>
-          BUILDER PACK
+          FRESHCHECK
           <span className="brand-dots" aria-hidden="true">
             <i />
             <i />
@@ -112,7 +112,7 @@ export function Chrome({ reduced }: { reduced: boolean }) {
           </span>
         </a>
         <a className="button header-cta" href={STORE_URL}>
-          Get the Builder Pack <span aria-hidden="true">↗</span>
+          Try the demo <span aria-hidden="true">↗</span>
         </a>
       </header>
       <div
@@ -145,8 +145,8 @@ export function Chrome({ reduced }: { reduced: boolean }) {
           ))}
         </nav>
         <div className="menu-bottom">
-          <span>Create. Design. Code. Build.</span>
-          <a href={STORE_URL}>Google Merchandise Store ↗</a>
+          <span>Close. Track. Remember.</span>
+          <a href={STORE_URL}>Explore the lid demo ↗</a>
         </div>
       </div>
     </>

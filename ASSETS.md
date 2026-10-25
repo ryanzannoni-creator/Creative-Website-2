@@ -1,7 +1,7 @@
-# Assets
+# Active FreshCheck assets
 
-`public/img/builder-sticker.png` is the image supplied for this class assignment, preserved without changes.
-`public/favicon.svg` is a four-color Builder Pack monogram.
-Fonts: Anton and Inter, served by Google Fonts.
+- `public/img/freshcheck-lid.svg`: original SVG concept illustration created for FreshCheck.
+- `public/favicon.svg`: matching concept illustration.
+- Anton and Inter fonts: served through Google Fonts.
 
-`public/img/sticker-mask.svg` frames the supplied screenshot around its sticker outline for display.
+The original template's unused sticker assets remain in the repository for historical continuity. They are not displayed on the FreshCheck site.

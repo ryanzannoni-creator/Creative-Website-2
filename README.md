@@ -1,20 +1,16 @@
-# Builder Pack
+# FreshCheck
 
-A class-assignment landing page for the Google Create Design Code Build sticker.
-Built with React, TypeScript, Vite, Tailwind CSS, GSAP ScrollTrigger, and Lenis.
+Ryan Zannoni's Marketing Venture website, adapted from the existing Creative Website 2 scrolling product template.
+
+FreshCheck is a proposed smart lid with an automatic timer, color indicators, and app reminders. The site presents the venture as a concept and includes a working three-state indicator demo, menu navigation, and email feedback link.
 
 ## Development
 
-```sh
-npm ci
-npm run dev
-npm run lint
-npm run build
-npm run preview
-```
+Run `npm ci`, then `npm run dev`. Validate with `npm run lint` and `npm run build`.
 
-The supplied sticker image is stored locally without modification. CSS frames its nontransparent region. Motion includes oversized type parallax, scroll reveals, an animated menu, and a floating sticker that docks to the page on narrow screens. Reduced-motion settings are respected.
+The existing GitHub Actions workflow builds and publishes pushes to `main` to GitHub Pages:
+https://ryanzannoni-creator.github.io/Creative-Website-2/
 
-Buttons link to the Google Merchandise Store; this assignment does not process orders.
+## Assets and content
 
-GitHub Actions validates and deploys main to https://ryanzannoni-creator.github.io/Creative-Website-2/ using the `/Creative-Website-2/` base path.
+`public/img/freshcheck-lid.svg` is an original vector concept illustration. Content is based on Ryan's supplied FreshCheck venture PDF. The website is not a functioning food-safety sensor or an ecommerce store. Feedback opens an email draft; it is not transmitted automatically.

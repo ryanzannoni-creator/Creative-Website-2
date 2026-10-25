@@ -1,9 +1,9 @@
 @import "tailwindcss";
 @theme {
-  --color-green: #34a853;
-  --color-yellow: #fbbc04;
-  --color-red: #ea4335;
-  --color-blue: #4285f4;
+  --color-green: #237349;
+  --color-yellow: #dcae47;
+  --color-red: #bf5941;
+  --color-blue: #286355;
   --color-ink: #202124;
   --font-display: "Anton", "Arial Narrow", sans-serif;
   --font-sans: "Inter", sans-serif;
@@ -12,7 +12,7 @@
   --frame: clamp(8px, 1.15vw, 18px);
   --rail: clamp(32px, 4vw, 62px);
   --gutter: clamp(24px, 4.5vw, 78px);
-  --surface: #f3f3f3;
+  --surface: #f6f3e9;
   --ease: cubic-bezier(0.16, 1, 0.3, 1);
 }
 * {
@@ -51,7 +51,7 @@ button:focus-visible {
   outline-offset: 5px;
 }
 ::selection {
-  background: #fbbc04;
+  background: #dcae47;
   color: #202124;
 }
 html.lenis,
@@ -68,22 +68,22 @@ html.lenis body {
   overscroll-behavior: contain;
 }
 .green {
-  color: #34a853;
+  color: #237349;
 }
 .yellow {
-  color: #fbbc04;
+  color: #dcae47;
 }
 .blue {
-  color: #4285f4;
+  color: #286355;
 }
 .red {
-  color: #ea4335;
+  color: #bf5941;
 }
 .text-ink {
   color: #202124;
 }
 .text-blue {
-  color: #4285f4;
+  color: #286355;
 }
 .text-white {
   color: #fff;
@@ -96,7 +96,7 @@ html.lenis body {
   inset: 0;
   z-index: 70;
   pointer-events: none;
-  border: var(--frame) solid #4285f4;
+  border: var(--frame) solid #286355;
 }
 .frame:before {
   content: "";
@@ -105,10 +105,10 @@ html.lenis body {
   height: var(--frame);
   background: linear-gradient(
     90deg,
-    #34a853 0 25%,
-    #fbbc04 25% 50%,
-    #ea4335 50% 75%,
-    #4285f4 75%
+    #237349 0 25%,
+    #dcae47 25% 50%,
+    #bf5941 50% 75%,
+    #286355 75%
   );
 }
 header {
@@ -142,16 +142,16 @@ header > * {
   width: 5px;
   height: 5px;
   border-radius: 50%;
-  background: #34a853;
+  background: #237349;
 }
 .brand-dots i:nth-child(2) {
-  background: #fbbc04;
+  background: #dcae47;
 }
 .brand-dots i:nth-child(3) {
-  background: #ea4335;
+  background: #bf5941;
 }
 .brand-dots i:nth-child(4) {
-  background: #4285f4;
+  background: #286355;
 }
 .button {
   display: inline-flex;
@@ -239,7 +239,7 @@ header > * {
 }
 .rail-track div {
   height: 100%;
-  background: #34a853;
+  background: #237349;
   transform-origin: top;
 }
 .rail-caption {
@@ -262,7 +262,7 @@ header > * {
   position: fixed;
   inset: var(--frame);
   z-index: 60;
-  background: #fbbc04;
+  background: #dcae47;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -326,7 +326,7 @@ footer {
 .status-dot {
   width: 7px;
   height: 7px;
-  background: #34a853;
+  background: #237349;
   border-radius: 50%;
 }
 .edition {
@@ -426,7 +426,7 @@ footer {
   height: auto;
 }
 .floating-sticker {
-  mask-image: url('/img/sticker-mask.svg');
+  mask-image: none;
   mask-size: 100% 100%;
   mask-repeat: no-repeat;
   transform: rotate(-9deg);
@@ -512,7 +512,7 @@ footer {
 }
 .ticker b {
   font-weight: 400;
-  color: #fbbc04;
+  color: #dcae47;
   padding: 0 30px;
 }
 @keyframes marquee {
@@ -559,13 +559,13 @@ footer {
   font-family: var(--font-display);
   font-size: 48px;
   line-height: 1;
-  color: #34a853;
+  color: #237349;
 }
 .blue-card .card-symbol {
-  color: #4285f4;
+  color: #286355;
 }
 .red-card .card-symbol {
-  color: #ea4335;
+  color: #bf5941;
 }
 .benefit-card h3 {
   font-size: 23px;
@@ -600,14 +600,14 @@ footer {
   position: absolute;
   width: 70%;
   height: 65%;
-  border: 1px solid #4285f440;
+  border: 1px solid #28635540;
   border-radius: 24px;
   background: #e8effb;
   transform: rotate(12deg);
 }
 .pack-outline.two {
   background: #f9eac1;
-  border-color: #fbbc0450;
+  border-color: #dcae4750;
   transform: rotate(-13deg);
   width: 66%;
   height: 64%;
@@ -624,7 +624,7 @@ footer {
   z-index: 35;
 }
 .clubs {
-  background: #4285f4;
+  background: #286355;
   color: #fff;
   margin-left: calc(-1 * var(--rail));
   padding-left: calc(var(--rail) + 24px);
@@ -644,7 +644,7 @@ footer {
   margin-bottom: 0;
 }
 .clubs .display span {
-  color: #fbbc04;
+  color: #dcae47;
 }
 .club-copy p {
   font-size: 16px;
@@ -661,7 +661,7 @@ footer {
 .club-symbols span {
   font-size: 65px;
   line-height: 1;
-  color: #fbbc04;
+  color: #dcae47;
 }
 .club-symbols span:nth-child(2) {
   color: #fff;
@@ -692,7 +692,7 @@ footer p {
 }
 footer strong {
   display: block;
-  color: #34a853;
+  color: #237349;
   font-weight: 500;
 }
 .store-link {
@@ -977,3 +977,41 @@ html[data-motion="on"] [data-reveal] {
     transform: none !important;
   }
 }
+
+/* FreshCheck adapts the original scrolling product template. */
+.sticker-crop img { width:100%; height:100%; object-fit:contain; }
+.hero-title { font-size:clamp(65px,9vw,150px); line-height:1.02; max-width:70%; }
+.hero-product-slot { right:1%; width:36%; top:22%; height:55%; }
+.hero-bottom { margin-top:32px; }
+.display { font-size:clamp(44px,5.8vw,88px); overflow-wrap:normal; }
+header { padding:10px 12px; background:#f6f3e9ed; border-radius:4px; top:calc(var(--frame) + 14px); }
+.menu-sheet { overflow-y:auto; }
+.menu-link { font-size:clamp(24px,4vw,52px); }
+.demo-tabs { display:flex; gap:8px; flex-wrap:wrap; }
+.demo-tabs button { flex:1; min-height:46px; padding:10px; border:1px solid #286355; cursor:pointer; border-radius:8px; background:transparent; }
+.demo-tabs button[aria-pressed="true"] { background:#286355; color:white; }
+.demo-panel { border:1px solid #28635555; padding:28px; border-radius:22px; background:#fffdf7; }
+.demo-output { padding-top:26px; }
+.demo-light { display:block; width:46px; height:46px; border-radius:50%; margin:0 0 20px; box-shadow:0 0 0 9px #eaece4; }
+.demo-output h3 { font-size:32px; margin:10px 0; font-weight:700; }
+.demo-output p { line-height:1.7; font-size:14px; }
+.phone-note { background:#eef2e9; padding:18px; border-radius:12px; margin-top:22px; min-height:142px; }
+.phone-note strong { font-size:12px; }
+.reset-demo { cursor:pointer; text-decoration:underline; margin:18px 0; padding:8px 0; }
+.demo-disclaimer,.concept-note { font-size:12px!important; line-height:1.7; color:#565d52; }
+.email-note { font-size:11px!important; }
+.clubs .display { font-size:clamp(42px,5.8vw,86px); }
+@media(min-width:760px) { .hero-bottom p { max-width:440px; } }
+@media(max-width:759px) {
+ .hero-title { font-size:15vw; max-width:100%; }
+ .hero-product-slot { position:relative;right:auto;top:auto;width:100%;height:270px; }
+ .hero { padding-top:120px; }
+ .display,.pack .display,.clubs .display { font-size:clamp(34px,9vw,66px); }
+ .demo-panel { padding:18px; }
+ .demo-tabs { gap:5px; }
+ .demo-tabs button { font-size:12px; }
+ .menu-sheet nav { gap:18px; }
+ .menu-link { font-size:clamp(22px,5.5vw,38px); }
+ .club-tags { flex-wrap:wrap; }
+}
+@media (max-width:759px) { .pack .display br:first-of-type { display:initial; } }
