@@ -1,4 +1,5 @@
 import { useLayoutEffect, useState } from 'react';
+import { Pricing } from './components/Pricing';
 import { Chrome } from './components/Chrome';
 import { StickerStage } from './components/Sticker';
 import { useReducedMotion } from './hooks/useReducedMotion';
@@ -29,6 +30,10 @@ function Demo() {
   </div>;
 }
 export default function App() {
+  if (location.pathname.endsWith("pricing.html")) return <Pricing/>;
+  return <Home/>;
+}
+function Home() {
   const reduced = useReducedMotion();
   useLayoutEffect(() => initMotion(reduced), [reduced]);
   useRevealSystem(!reduced);
@@ -39,7 +44,7 @@ export default function App() {
         <div className="hero-eyebrow"><span className="status-dot"/> SMART LID. SIMPLE ROUTINE.<span className="edition">FRESHCHECK / PRODUCT CONCEPT</span></div>
         <h1 className="hero-title"><span className="green">LESS</span><br/>GUESS.<br/><span className="blue">MORE FRESH.</span></h1>
         <div className="hero-product-slot" data-sticker-slot />
-        <div className="hero-bottom"><div><p>Meet FreshCheck. A smart-lid concept designed to help you keep track of leftovers, with a timer, a simple light, and a timely nudge.</p><a className="button" href="#demo">Try the lid demo <span aria-hidden="true">↓</span></a></div><span className="micro scroll-hint">KEEP LEFTOVERS IN THE PICTURE ↓</span></div>
+        <div className="hero-bottom"><div><p>Meet FreshCheck. A smart-lid concept designed to help you keep track of leftovers, with a timer, a simple light, and a timely nudge.</p><a className="pricing-home-link" href="pricing.html">Explore the $52.99 starter bundle ↗</a><a className="button" href="#demo">Try the lid demo <span aria-hidden="true">↓</span></a></div><span className="micro scroll-hint">KEEP LEFTOVERS IN THE PICTURE ↓</span></div>
       </section>
       <section id="value" className="value section">
         <div className="section-label"><span>01 /</span> A SMALL CHANGE TO YOUR FRIDGE</div>
@@ -65,6 +70,6 @@ export default function App() {
         <div className="club-tags"><span>COLLEGE STUDENTS</span><span>BUSY HOUSEHOLDS</span><span>MEAL PREPPERS</span></div>
       </section>
     </main>
-    <footer><a className="wordmark" href="#hero">FRESHCHECK</a><p>Keep track of leftovers.<strong>Make room for your day.</strong></p><a className="store-link" href="https://ryanzannoni-creator.github.io/">Meet Ryan Zannoni ↗</a><div className="footer-note"><span>A Marketing Venture concept by Ryan Zannoni.</span><span>Proposed features. Product availability and pricing have not been announced.</span></div></footer>
+    <footer><a className="wordmark" href="#hero">FRESHCHECK</a><p>Keep track of leftovers.<strong>Make room for your day.</strong></p><a className="store-link" href="pricing.html">Starter bundle · $52.99 USD ↗</a><a className="store-link" href="https://ryanzannoni-creator.github.io/">Meet Ryan Zannoni ↗</a><div className="footer-note"><span>A Marketing Venture concept by Ryan Zannoni.</span><span>Proposed features. Product not available for purchase.</span></div></footer>
   </>;
 }

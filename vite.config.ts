@@ -8,6 +8,7 @@ export default defineConfig({
   build: {
     target: 'es2020',
     rollupOptions: {
+      input: { home: 'index.html', pricing: 'pricing.html' },
       output: {
         manualChunks: {
           motion: ['gsap', 'lenis'],

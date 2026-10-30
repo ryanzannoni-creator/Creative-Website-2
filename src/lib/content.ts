@@ -6,6 +6,7 @@ export const navigation = [
   {label:'How it works',href:'#benefits'},
   {label:'Try the demo',href:'#demo'},
   {label:'Designed for you',href:'#pack'},
+  {label:'Pricing & bundle',href:'pricing.html'},
   {label:'Share feedback',href:'#clubs'},
 ];
 export const benefits = [

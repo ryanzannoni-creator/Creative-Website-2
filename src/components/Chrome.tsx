@@ -3,6 +3,8 @@ import { navigation, STORE_URL } from "../lib/content";
 import { gsap, lockScroll, scrollTo } from "../lib/scroll";
 
 export function Chrome({ reduced }: { reduced: boolean }) {
+  const pricing = location.pathname.endsWith("pricing.html");
+  const homeLink = (href: string) => pricing && href.startsWith("#") ? `index.html${href}` : href;
   const [open, setOpen] = useState(false);
   const menu = useRef<HTMLDivElement>(null);
   const toggle = useRef<HTMLButtonElement>(null);
@@ -102,7 +104,7 @@ export function Chrome({ reduced }: { reduced: boolean }) {
         <span className="rail-caption">KEEP TRACK OF FRESH</span>
       </div>
       <header className={open ? "menu-open" : ""}>
-        <a className="wordmark" href="#hero" onClick={() => setOpen(false)}>
+        <a className="wordmark" href={homeLink("#hero")} onClick={() => setOpen(false)}>
           FRESHCHECK
           <span className="brand-dots" aria-hidden="true">
             <i />
@@ -111,7 +113,7 @@ export function Chrome({ reduced }: { reduced: boolean }) {
             <i />
           </span>
         </a>
-        <a className="button header-cta" href={STORE_URL}>
+        <a className="button header-cta" href={homeLink(STORE_URL)}>
           Try the demo <span aria-hidden="true">↗</span>
         </a>
       </header>
@@ -130,8 +132,9 @@ export function Chrome({ reduced }: { reduced: boolean }) {
             <a
               key={item.href}
               className="menu-link"
-              href={item.href}
+              href={homeLink(item.href)}
               onClick={(e) => {
+                if (pricing || !item.href.startsWith("#")) { setOpen(false); return; }
                 e.preventDefault();
                 setOpen(false);
                 lockScroll(false);
@@ -146,7 +149,7 @@ export function Chrome({ reduced }: { reduced: boolean }) {
         </nav>
         <div className="menu-bottom">
           <span>Close. Track. Remember.</span>
-          <a href={STORE_URL}>Explore the lid demo ↗</a>
+          <a href={homeLink(STORE_URL)}>Explore the lid demo ↗</a>
         </div>
       </div>
     </>
