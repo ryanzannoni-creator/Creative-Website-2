@@ -1,0 +1,70 @@
+{
+  "schemaVersion": "1.0.0",
+  "handoffVersion": 1,
+  "projectName": "Fresh Check",
+  "modelName": "Fresh Check",
+  "modelType": "Physical product",
+  "confirmedAt": "2026-11-06T19:15:50.300Z",
+  "dimensions": {
+    "units": "meters",
+    "width": 0.24700000762939453,
+    "height": 0.11020000005960463,
+    "depth": 0.16700000762939454
+  },
+  "coordinateSystem": {
+    "up": "Y",
+    "handedness": "right",
+    "glbUnits": "meters",
+    "editorUnits": "centimeters"
+  },
+  "camera": {
+    "projection": "perspective",
+    "position": [
+      -0.000854536768203509,
+      0.4011324198160377,
+      0.3788056700816001
+    ],
+    "target": [
+      0,
+      0.055099999970197676,
+      0
+    ],
+    "fov": 38,
+    "orthographicHalfHeight": 0.20995000648498535
+  },
+  "background": "#e9e8e0",
+  "lighting": "Soft daylight",
+  "description": "Stackable smart food storage with a clear container, soft rounded lid, and an integrated freshness display. Concept prototype; display values are illustrative.",
+  "featureHotspots": [
+    {
+      "name": "Clear container",
+      "description": "Transparent storage body.",
+      "position": [
+        0,
+        0.045,
+        0
+      ]
+    },
+    {
+      "name": "Fresh Check display",
+      "description": "Illustrative freshness display; not a food safety sensor.",
+      "position": [
+        0,
+        0.11019999999999999,
+        0
+      ]
+    }
+  ],
+  "files": {
+    "model": "model.glb",
+    "project": "project.json",
+    "preview": "preview.png",
+    "readme": "README.txt"
+  },
+  "integrity": {
+    "algorithm": "SHA-256",
+    "file": "model.glb",
+    "checksum": "a0e5eb42888920a2bc2b8587d49f636fd669393279971bcfe227c8569339e58e"
+  },
+  "meshCount": 260
+}

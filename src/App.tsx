@@ -1,4 +1,5 @@
 import { useLayoutEffect, useState } from 'react';
+import { ProductExperience } from './components/ProductExperience';
 import { Pricing } from './components/Pricing';
 import { Chrome } from './components/Chrome';
 import { StickerStage } from './components/Sticker';
@@ -43,7 +44,7 @@ function Home() {
       <section id="hero" className="hero">
         <div className="hero-eyebrow"><span className="status-dot"/> SMART LID. SIMPLE ROUTINE.<span className="edition">FRESHCHECK / PRODUCT CONCEPT</span></div>
         <h1 className="hero-title"><span className="green">LESS</span><br/>GUESS.<br/><span className="blue">MORE FRESH.</span></h1>
-        <div className="hero-product-slot" data-sticker-slot />
+        <div className="hero-product-slot hero-3d-slot"><ProductExperience reduced={reduced}/></div>
         <div className="hero-bottom"><div><p>Meet FreshCheck. A smart-lid concept designed to help you keep track of leftovers, with a timer, a simple light, and a timely nudge.</p><a className="pricing-home-link" href="pricing.html">Explore the $52.99 starter bundle ↗</a><a className="button" href="#demo">Try the lid demo <span aria-hidden="true">↓</span></a></div><span className="micro scroll-hint">KEEP LEFTOVERS IN THE PICTURE ↓</span></div>
       </section>
       <section id="value" className="value section">
